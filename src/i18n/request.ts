@@ -1,21 +1,18 @@
-import { getRequestConfig } from "next-intl/server";
-import { routing } from "./routing";
+import { getRequestConfig } from 'next-intl/server';
+
+const SUPPORT_LOCALES = ['en', 'vi'];
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // This typically corresponds to the `[locale]` segment
   let locale = await requestLocale;
-  // Ensure that the incoming `locale` is valid
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  if (!locale || !routing.locales.includes(locale as any)) {
-    locale = routing.defaultLocale;
+  if (!locale) {
+    locale = 'en';
+  } else if (locale && !SUPPORT_LOCALES.includes(locale)) {
+    locale = 'en';
   }
-
-  const homepage = await import(`../locales/${locale}/homepage.json`);
 
   return {
     locale,
-    messages: {
-      ...homepage,
-    },
+    messages: (await import(`../messages/${locale}.json`)).default,
   };
 });
