@@ -10,6 +10,7 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+
   .absolute-center {
     @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
   }
@@ -22,4 +23,44 @@ body {
   background-color: #fafafa;
   /* background-color: black; */
   scroll-behavior: smooth;
+}
+
+.react-datepicker__day--disabled {
+  opacity: 0.5 !important;
+  user-select: none;
+}
+
+.react-datepicker__day-name {
+  color: white !important;
+}
+
+.react-datepicker__current-month {
+  color: white !important;
+}
+
+.react-datepicker-time__header {
+  color: white !important;
+}
+
+.react-datepicker {
+  border: none !important;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar {
+  width: 7px !important;
+  background-color: #EFF1F9;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar-thumb {
+  background: #0667F6 !important;
+  border-radius: 10px !important;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white !important;
+  border-radius: 10px !important;
+}
+
+.react-datepicker__tab-loop {
+  margin: 0px !important;
 }

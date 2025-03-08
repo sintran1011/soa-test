@@ -17,7 +17,9 @@ const nextConfig = {
     config.resolve.alias["@images"] = path.join(__dirname, "public/");
     config.module.rules.push({
       test: /\.svg$/i,
-      use: ["@svgr/webpack"],
+      use: [
+        { loader: "@svgr/webpack", options: { icon: true, typescript: true } },
+      ],
     });
     return config;
   },

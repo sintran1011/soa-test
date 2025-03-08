@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {},
+      screens: { xs: "480px", "2xs": "375px", "3xs": "320px" },
       fontSize: {
         head_l: ["1.5rem", { lineHeight: "1.75rem", fontWeight: "700" }],
         head_s: ["1rem", { lineHeight: "1.25rem", fontWeight: "500" }],
