@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import { ReactNode, useEffect } from "react";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const LenisLayout = ({ children }: { children: ReactNode }) => {
   const lenis = new Lenis();
 
@@ -15,7 +17,7 @@ const LenisLayout = ({ children }: { children: ReactNode }) => {
     gsap.ticker.lagSmoothing(0);
   }, []);
 
-  return { children };
+  return <>{children}</>;
 };
 
 export default LenisLayout;

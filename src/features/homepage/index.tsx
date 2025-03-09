@@ -1,14 +1,17 @@
-"use client";
 import React from "react";
-import { useTranslations } from "next-intl";
+import Banner from "./components/Banner";
+import Block1 from "./components/Block1";
+import Block2 from "./components/Block2";
+import Activities from "./components/Activities";
 
 const Homepage = () => {
-  const t = useTranslations("HomePage");
-
   return (
-    <div>
-      <p>{t("title")}</p>
-    </div>
+    <>
+      <Banner />
+      <Block1 />
+      <Block2 />
+      <Activities />
+    </>
   );
 };
 

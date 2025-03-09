@@ -1,6 +1,13 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "label": {
+    "title": "Title",
+    "activity": "Activity",
+    "titleBlock": "Title Block",
+    "subtitleBlock": "Subtitle Block",
+    "package": "Package",
+    "location": "Location",
+    "ourActivities": "Our Activities",
+    "busy": "Busy",
+    "free": "Free"
   }
 }
-

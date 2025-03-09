@@ -1,0 +1,13 @@
+{
+  "label": {
+    "title": "Titre",
+    "activity": "Activité",
+    "titleBlock": "Titre Bloc",
+    "subtitleBlock": "Sous-titre Bloc",
+    "package": "Forfait",
+    "location": "Emplacement",
+    "ourActivities": "Nos Activités",
+    "busy": "Occupé",
+    "free": "Libre"
+  }
+}

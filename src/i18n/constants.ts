@@ -5,7 +5,7 @@ export type SiteConfig = {
 };
 
 export const defaultConfig: SiteConfig = {
-  locales: ["en", "vi"],
+  locales: ["en", "fr"],
   defaultLocale: "en",
   localePrefix: "always",
 };

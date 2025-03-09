@@ -1,6 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
 
-const SUPPORT_LOCALES = ['en', 'vi'];
+const SUPPORT_LOCALES = ['en', 'fr'];
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // This typically corresponds to the `[locale]` segment

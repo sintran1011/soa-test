@@ -5,4 +5,12 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export { cn };
+const generateRandomLocations = (count: number) => {
+  return Array.from({ length: count }, () => ({
+    id: Math.random().toString(36),
+    x: Math.random() * 80 + 10,
+    y: Math.random() * 80 + 10,
+  }));
+};
+
+export { cn, generateRandomLocations };
